@@ -6,8 +6,8 @@ import java.time.temporal.ChronoUnit
 import java.time.temporal.ChronoUnit.DAYS
 import java.util.*
 
-object Actual366 : DayCounter {
-    val daysInYear = 366
+object Actual360 : DayCounter {
+    val daysInYear = 360
 
     override fun days(startDate: LocalDate, endDate: LocalDate): Long {
         return ChronoUnit.DAYS.between(startDate, endDate)
